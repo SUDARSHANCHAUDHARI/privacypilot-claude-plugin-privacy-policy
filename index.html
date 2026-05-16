@@ -1,50 +1,225 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Privacy Policy — PrivacyPilot</title>
-<style>
-  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; max-width: 800px; margin: 0 auto; padding: 20px; color: #333; line-height: 1.6; }
-  h1 { color: #1a1a1a; border-bottom: 2px solid #eee; padding-bottom: 10px; }
-  h2 { color: #2a2a2a; margin-top: 30px; }
-  a { color: #0066cc; }
-  .last-updated { color: #666; font-size: 0.9em; }
-</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PrivacyPilot Privacy Policy</title>
+  <style>
+    body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.6;max-width:860px;margin:0 auto;padding:32px 20px;color:#1f2937;background:#fff}
+    h1,h2,h3,h4{line-height:1.25;color:#111827} h1{font-size:2rem} h2{margin-top:2rem;border-top:1px solid #e5e7eb;padding-top:1rem} .li{margin-left:1rem}
+    code{background:#f3f4f6;padding:0.1rem 0.25rem;border-radius:4px}
+  </style>
 </head>
 <body>
+<h1>PrivacyPilot Privacy Policy</h1>
 
-<h1>Privacy Policy</h1>
-<p class="last-updated">Last updated: April 6, 2026</p>
+<p>**Effective Date:** May 17, 2026</p>
+<p>_Last updated: May 17, 2026_</p>
+<p>**Version:** 1.0.0</p>
 
-<p>This Privacy Policy applies to the <strong>PrivacyPilot</strong> Claude Code plugin, developed by SUDARSHANCHAUDHARI / SudarshanTechLabs.</p>
+<p>PrivacyPilot ("we," "our," or "us") is a Claude Code plugin for Android developers that scans local Android manifest and Gradle files, detects permissions and SDKs, generates privacy-policy content, audits policy gaps, and can help prepare GitHub Pages deployment steps. This Privacy Policy explains what information the plugin can access locally, how it is used, and the choices you have. By installing or using PrivacyPilot, you agree to the practices described below.</p>
 
-<h2>What PrivacyPilot Does</h2>
-<p>PrivacyPilot is a Claude Code plugin that reads your local Android project files (AndroidManifest.xml, build.gradle) and generates a privacy policy HTML file on your machine.</p>
+<h2>Information We Collect</h2>
 
-<h2>Data Collection</h2>
-<p>PrivacyPilot does <strong>not</strong> collect, transmit, or store any user data. Specifically:</p>
-<ul>
-  <li>All file reading and policy generation happens locally on your machine</li>
-  <li>No data is sent to any external server by this plugin</li>
-  <li>Your developer details (name, email, GitHub username) are stored locally in your Claude Code settings on your machine only</li>
-  <li>No analytics, crash reporting, or telemetry is included in this plugin</li>
-</ul>
+<h3>Location Data</h3>
+<p class="li">- **Not collected**: PrivacyPilot is a Claude Code plugin, not an Android app or mobile service. It does not request, collect, infer, store, or share device location data.</p>
+<p class="li">- **No background location**: The plugin does not run a mobile background location service and does not use GPS, Wi-Fi, Bluetooth, or cell-tower location signals.</p>
 
-<h2>Third-Party Services</h2>
-<p>PrivacyPilot itself uses no third-party services. The generated privacy policies it produces may reference third-party services (AdMob, Firebase, etc.) on behalf of your Android app — those are disclosures about your app, not about this plugin.</p>
+<h3>Account Information</h3>
+<p class="li">- **No plugin account**: PrivacyPilot does not require a separate account, login, or hosted user profile.</p>
+<p class="li">- **Local developer settings**: The plugin may use developer details you enter in Claude Code settings or local project configuration, if relevant to the command you run.</p>
+<p class="li">- **GitHub identity**: If a workflow references GitHub repositories, it uses the repository URLs or usernames you provide locally. PrivacyPilot does not operate a separate identity service.</p>
 
-<h2>GitHub Pages Deployment</h2>
-<p>When you use the <code>/privacypilot:github-page</code> command, the plugin uses your local git configuration to push an HTML file to a GitHub repository you own. No data passes through any PrivacyPilot servers.</p>
+<h3>Device Information</h3>
+<p class="li">- **Local project files**: Android manifest files, Gradle files, version catalogs, package names, app names, SDK names, permission declarations, and existing privacy-policy text that you ask the plugin to scan or audit.</p>
+<p class="li">- Developer details entered in Claude Code plugin settings, such as name, company, email, GitHub username, and country.</p>
+<p class="li">- **Environment information**: The plugin may inspect local tool availability, such as Git, Java, Gradle, shell commands, or Claude Code plugin settings, only to perform requested local workflows.</p>
+<p class="li">- **No telemetry**: PrivacyPilot does not collect analytics, device identifiers, advertising IDs, crash reports, or usage telemetry.</p>
+
+<h2>How We Use Your Information</h2>
+
+<h3>Location Sharing</h3>
+<p class="li">- **Not applicable**: PrivacyPilot does not provide location sharing and does not share your location with anyone.</p>
+<p class="li">- Any location-related Android permissions in projects you inspect are treated only as local project text if they appear in files you ask Claude Code to analyze.</p>
+
+<h3>Account Management</h3>
+<p class="li">- There is no hosted PrivacyPilot account to create, manage, or delete.</p>
+<p class="li">- Local developer settings are used only to avoid repeated prompts and to generate project-specific output when you run commands.</p>
+
+<h3>Service Improvement</h3>
+<p class="li">- PrivacyPilot does not send usage data, diagnostics, or generated output to a SudarshanTechLabs server.</p>
+<p class="li">- Improvements happen through local plugin updates, source-code changes, documentation updates, and issue reports you choose to file manually.</p>
+<p class="li">- We do not run ads and do not sell, rent, or monetize your data to third parties.</p>
+
+<h2>Storage and Retention</h2>
+
+<h3>Data Storage</h3>
+<p class="li">- PrivacyPilot may generate local privacy-policy files such as `privacy-policy/index.html`, markdown policy drafts, or deployment instructions. It does not create a remote account or remote database.</p>
+<p class="li">- All plugin-accessed content remains in your local Claude Code session, local filesystem, or the project repository you are working in.</p>
+<p class="li">- No plugin data is stored on a SudarshanTechLabs backend server.</p>
+
+<h3>Data Retention</h3>
+<p class="li">- Local settings remain until you delete them, reset Claude Code plugin settings, remove the project config, or uninstall the plugin.</p>
+<p class="li">- Generated files remain in your local project until you delete or commit them.</p>
+<p class="li">- Claude Code itself may retain conversation or workspace context according to Anthropic/Claude Code settings and policies; PrivacyPilot does not control that retention.</p>
+
+<h3>Data Security</h3>
+<p class="li">- PrivacyPilot is designed for local-first use inside Claude Code.</p>
+<p class="li">- Sensitive generated content, such as signing snippets, local config, or project metadata, should be reviewed before committing to git.</p>
+<p class="li">- The plugin does not intentionally transmit plugin-accessed data to external servers.</p>
+
+<h2>Data Sharing</h2>
+
+<h3>Family Groups</h3>
+<p class="li">- **Not applicable**: PrivacyPilot does not include family groups, groups, teams, social sharing, or location-sharing communities.</p>
+<p class="li">- Data is not shared with family members or other users by the plugin.</p>
+
+<h3>Third Parties</h3>
+<p class="li">- PrivacyPilot does not send scanned manifest, Gradle, SDK, or policy content to Firebase, Google Cloud, analytics services, advertising networks, or data brokers.</p>
+<p class="li">- If you choose to publish generated policy files to GitHub Pages, GitHub hosts the published page and GitHub’s own terms and privacy policies apply to that hosting.</p>
+<p class="li">- See [Anthropic's Privacy Policy](https://www.anthropic.com/privacy) for Claude/Claude Code data practices.</p>
+<p class="li">- See [GitHub's Privacy Statement](https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement) for GitHub-hosted repositories or GitHub Pages that you choose to use.</p>
+
+<p>We do **not** share your data with:</p>
+<p class="li">- Advertising networks</p>
+<p class="li">- Data brokers</p>
+<p class="li">- Analytics services operated by this plugin</p>
+<p class="li">- A SudarshanTechLabs backend server</p>
+
+<h2>Permissions Used</h2>
+
+<h3>Required Permissions</h3>
+
+<p>* **Local workspace file access**: Required so Claude Code and PrivacyPilot can read or update project files that you explicitly work on.</p>
+<p>* **Claude Code plugin configuration access**: Required to read plugin settings or command configuration when a command needs it.</p>
+<p>* **Command-specific local tool access**: Read access to local Android manifest, Gradle, version-catalog, and privacy-policy files you ask the plugin to scan. Write access to local generated policy files only when you run generation/update workflows. Optional Git/GitHub Pages actions only when you explicitly approve deployment-related steps.</p>
+
+<h3>Optional Permissions</h3>
+
+<p>* **Network access**: Not required for normal local policy behavior, except for command-specific tasks you explicitly request, such as downloading a local tool, viewing documentation, or publishing a GitHub Pages repository.</p>
+<p>* **Git/GitHub access**: Optional and used only when you explicitly ask for repository or publishing workflows.</p>
+<p>* **Shell command execution**: Optional and subject to Claude Code/macOS approval flows when commands need to run local tools.</p>
+
+<h2>Your Rights and Controls</h2>
+
+<h3>Location Sharing Control</h3>
+<p class="li">- PrivacyPilot does not collect or share location data.</p>
+<p class="li">- If you inspect an Android project with location permissions, you control that project and its privacy disclosures separately.</p>
+
+<h3>Account Management</h3>
+<p class="li">- There is no PrivacyPilot hosted account.</p>
+<p class="li">- You can remove local plugin settings, project config, generated files, and the plugin itself at any time.</p>
+
+<h3>Data Access</h3>
+<p class="li">- You can inspect all files generated by PrivacyPilot in your local project.</p>
+<p class="li">- You can inspect plugin settings in Claude Code settings where applicable.</p>
+<p class="li">- You can review source code and documentation in the plugin repository.</p>
+
+<h3>GDPR Rights (EU Users)</h3>
+<p>If you are in the European Union, you may have additional rights regarding personal data:</p>
+<p class="li">- **Right to Access**: Request a copy of personal data we may hold</p>
+<p class="li">- **Right to Rectification**: Correct inaccurate data</p>
+<p class="li">- **Right to Erasure**: Request deletion of data</p>
+<p class="li">- **Right to Restrict Processing**: Limit how data is used</p>
+<p class="li">- **Right to Data Portability**: Receive data in a portable format</p>
+<p class="li">- **Right to Object**: Object to certain types of processing</p>
+
+<p>Because PrivacyPilot does not operate a hosted backend or collect plugin telemetry, most plugin-related data is under your direct local control. For questions, contact us using the methods in the Contact Us section.</p>
+
+<h3>Permissions</h3>
+<p class="li">- You can disable or uninstall PrivacyPilot in Claude Code.</p>
+<p class="li">- You can delete generated files from your project.</p>
+<p class="li">- You can deny local command execution when Claude Code asks for approval.</p>
+<p class="li">- You can avoid GitHub publishing workflows unless you explicitly want to publish generated files.</p>
+
+<h2>Children's Privacy</h2>
+
+<p class="li">- PrivacyPilot is a developer tool and is **not intended for children under 13**.</p>
+<p class="li">- We do not knowingly collect data from children under 13 through this plugin.</p>
+<p class="li">- If you believe a child has provided personal information through plugin-related communication, contact us to request deletion.</p>
+
+<h2>Security</h2>
+
+<p class="li">- PrivacyPilot follows a local-first design and does not intentionally transmit plugin-accessed files to a SudarshanTechLabs server.</p>
+<p class="li">- Review generated output before committing, publishing, or sharing it.</p>
+<p class="li">- Do not commit secrets, private keys, keystores, tokens, local config, or signing material.</p>
+<p class="li">- Keep Claude Code, Git, Java, Gradle, and other local tools updated.</p>
+<p class="li">- Use git ignore rules for machine-specific and secret files.</p>
 
 <h2>Changes to This Policy</h2>
-<p>We may update this Privacy Policy from time to time. Changes will be reflected by updating the "last updated" date above.</p>
 
-<h2>Contact</h2>
-<ul>
-  <li>Email: <a href="mailto:sudarshantechlabs@gmail.com">sudarshantechlabs@gmail.com</a></li>
-  <li>GitHub: <a href="https://github.com/SUDARSHANCHAUDHARI">github.com/SUDARSHANCHAUDHARI</a></li>
-</ul>
+<p>We may update this Privacy Policy to reflect new plugin features, legal requirements, or changes in our practices. Significant changes will be:</p>
+<p class="li">- Noted in plugin release notes or changelog when applicable</p>
+<p class="li">- Updated in this repository</p>
+<p class="li">- Published with a new "Last updated" date</p>
+
+<p>The "Last updated" date at the top of this policy indicates when revisions occurred. Continued use of the plugin after changes constitutes acceptance of the updated policy.</p>
+
+<h2>Contact Us</h2>
+
+<p>If you have questions about this Privacy Policy, wish to request deletion of any information you sent us directly, or have privacy concerns:</p>
+
+<p>* **GitHub Repository:** https://github.com/SUDARSHANCHAUDHARI/privacypilot-claude-plugin-privacy-policy</p>
+<p>* **Email:** sunny.sudarshan@gmail.com</p>
+<p>* **Plugin Repository:** https://github.com/SUDARSHANCHAUDHARI/PrivacyPilot</p>
+<p>* **Live Privacy Policy:** https://sudarshanchaudhari.github.io/privacypilot-claude-plugin-privacy-policy/</p>
+
+<p>We will respond as quickly as possible, typically within 48 hours.</p>
+
+<h2>Data Deletion</h2>
+
+<h3>How to Delete Your Account:</h3>
+<p>There is no hosted PrivacyPilot account. You have multiple options to remove plugin-related local data:</p>
+
+<h4>Option 1: In-App Deletion</h4>
+<p class="li">1. Open Claude Code</p>
+<p class="li">2. Disable or uninstall the PrivacyPilot plugin</p>
+<p class="li">3. Remove any PrivacyPilot plugin settings from Claude Code settings</p>
+<p class="li">4. Delete any generated files or local configuration from the project where you used the plugin</p>
+
+<h4>Option 2: Email Deletion Request</h4>
+<p>Send an email to: **sunny.sudarshan@gmail.com**</p>
+<p class="li">- Subject: "PrivacyPilot Privacy/Data Deletion Request"</p>
+<p class="li">- Include: What information you believe you sent to us directly</p>
+<p class="li">- We'll review and respond within 48 hours</p>
+
+<h4>Option 3: Web Deletion</h4>
+<p>PrivacyPilot does not provide a hosted web account deletion portal because it does not create hosted user accounts.</p>
+
+<h3>What Gets Deleted:</h3>
+<p class="li">- Local plugin settings you remove from Claude Code</p>
+<p class="li">- Local generated files you delete from your project</p>
+<p class="li">- Local project configuration files you delete</p>
+<p class="li">- Any direct support-request information you ask us to delete, where legally and technically possible</p>
+
+<h3>Data Retention After Deletion:</h3>
+<p class="li">- **Immediate:** Local files/settings are removed when you delete them from your machine</p>
+<p class="li">- **Support email:** Support messages may remain in email systems unless you request deletion and deletion is legally/technically possible</p>
+<p class="li">- **No hosted plugin backend:** There is no PrivacyPilot server database to delete from</p>
+
+<p class="li">1. Delete generated privacy-policy files from your local project.</p>
+<p class="li">2. Remove PrivacyPilot developer settings from Claude Code plugin settings.</p>
+<p class="li">3. Uninstall the plugin from Claude Code.</p>
+<p class="li">4. If you used the plugin to prepare a GitHub Pages deployment, remove the deployed repository/page manually from GitHub if you no longer want it published.</p>
+
+<h2>Firebase and Google Services</h2>
+
+<p class="li">- PrivacyPilot does not use Firebase Authentication, Firebase Realtime Database, Firebase Analytics, Firebase Crashlytics, Google Maps, AdMob, or Google Location Services as part of the plugin privacy-policy workflow.</p>
+<p class="li">- If PrivacyPilot helps inspect or generate disclosures for an Android app that uses Firebase or Google services, that information is read from your local project files and belongs to that Android app's own privacy policy.</p>
+<p class="li">- See [Google's Privacy Policy](https://policies.google.com/privacy) for Google's data practices when you independently use Google services.</p>
+
+<h2>About PrivacyPilot</h2>
+
+<p>PrivacyPilot is a Claude Code plugin for Android developers that scans local Android manifest and Gradle files, detects permissions and SDKs, generates privacy-policy content, audits policy gaps, and can help prepare GitHub Pages deployment steps.</p>
+
+<p>Main commands include: `/privacypilot:generate`, `/privacypilot:audit`, `/privacypilot:github-page`, `/privacypilot:update`.</p>
+
+<p>The plugin is intended to run inside Claude Code and operate on local project files under your control.</p>
+
+<h2>Recent Updates (Version 1.0.0 - May 17, 2026)</h2>
+
+<p class="li">- Initial plugin privacy policy aligned with the shared SudarshanTechLabs privacy policy structure.</p>
+<p class="li">- Clarifies local-only scanning of Android manifests, Gradle files, SDK disclosures, policy generation, and optional GitHub Pages deployment workflow.</p>
 
 </body>
 </html>
